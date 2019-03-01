@@ -6,40 +6,38 @@
 
 using namespace std; 
 
-// initialize new class instances 
-UserIO * user = new UserIO(); 
-World * w = new World(height, width); 
-ClassicMode * cM = new ClassicMode(w); 
-FileParser * fp = new FileParser(user->filePath);
-
-// build empty grid 
-World::World(int height, int width)
-{
-    **grid = new bool**[height];
-    for (unsigned int i = 0; i < width; i++)
-    {
-        *grid[i] = new bool*[c]; 
-    }
-}
-
 int main (int argc, char** argv)
 {
-    user->Config();
-    int boundMode = user->BoundMode();
+    UserIO user;
+    user.Config();
 
-    int height = fp->rowInt; 
-    int width = fp->colInt; 
+    FileParser fp(user.filePath);
 
+    ClassicMode cm;
+    // initialize new class instances 
+    //UserIO *user = new UserIO(); 
+    //UserIO user;
+    //ClassicMode * cM = new ClassicMode(); 
+    //FileParser * fp = new FileParser(user.filePath);
+
+    cout << "test" << endl;
+    user.Config();
+    int boundMode = user.BoundMode();
+cout << "test2" << endl;
+    int height = fp.rowInt; 
+    int width = fp.colInt; 
+
+    World * w = new World(height, width); 
     
     // Classic Mode 
-    if (boundMode == 1)
+    if (boundMode == 1) 
     {
         // iterate through w.grid for r and c 
         for (int r = 0; r < height; r++)
         {
             for (int c = 0; c < width; c++)
             {
-                cM.classicNeighbors(r, c, height, width);
+                cm.classicNeighbors(r, c, height, width);
             }
         }
     }
@@ -55,4 +53,6 @@ int main (int argc, char** argv)
     {
         //mM.mirrorNeighbors
     }
+
+    return 0;
 }

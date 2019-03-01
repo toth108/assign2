@@ -1,13 +1,10 @@
 #include "UserIO.h" 
 #include "FileParser.h"
-#include "ClassicMode.h"
 #include <iostream> 
 #include <fstream> 
 #include <string>
 
 using namespace std; 
-
-//ClassicMode cM(); 
 
 int UserIO::GetInt()
 {
@@ -50,8 +47,9 @@ int UserIO::Config()
         string filePath; 
         cin>>filePath; 
 
-        FileParser * fp = new FileParser(filePath);
-        fp->openFile(filePath);
+        // FileParser * fp = new FileParser(filePath);
+        FileParser fp(filePath);
+        fp.openFile(filePath);
     }
     else if (configChoice == 2)
     {

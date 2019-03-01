@@ -1,20 +1,17 @@
 #include "World.h"
-#include "FileParser.h"
-#include "UserIO.h" 
-#include "ClassicMode.h"
 #include <iostream> 
 
 using namespace std; 
 
-ClassicMode cM; 
 
 // build empty grid 
 World::World(int height, int width)
 {
+    int c; 
     **grid = new bool**[height];
-    for (unsigned int i = 0; i < width; i++)
+    for (unsigned int r = 0; r < width; r++)
     {
-        *grid[i] = new bool*[c]; 
+        *grid[r] = new bool*[c]; 
     }
 }
 
