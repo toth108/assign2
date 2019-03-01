@@ -11,7 +11,7 @@ ClassicMode::ClassicMode() // (World createdWorld)
     //World w(height, width) = createdWorld;
 }
 
-// check neighbors 
+// check for neighbors 
 int ClassicMode::classicNeighbors(int r, int c, int height, int width) 
 {
     int neighbors = 0; 

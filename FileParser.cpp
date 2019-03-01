@@ -2,6 +2,7 @@
 #include <iostream> 
 #include <fstream> 
 #include <string>
+#include <stdexcept>
 
 using namespace std; 
 
@@ -21,30 +22,58 @@ void FileParser::openFile(string filePath)
 }
 
 // get an int from the file line 
-int FileParser::fpGetInt()
+int FileParser::fpGetInt(string line)
 {
-    int x;
-    cin>>x;
-    if (cin.fail())
+    int lineInt; 
+    while (true)
     {
-        cin.clear();
-        cin.ignore(1000,'\n');
-        cout<<"This input is invalid. Please enter an integer."<<endl; 
-        cin>>x; 
+        try 
+        {
+            lineInt = stoi(line);
+            break; 
+        }
+        catch(invalid_argument& e)
+        {
+            cout<<"This input is invalid. Please enter an integer. fp1"<<endl; 
+        }
+        break; 
+ 
     }
-    return x;
+    return lineInt; 
+}
+
+FileParser::FileParser()
+{
+    int f = 0; // it needed something here to run 
+    return; 
 }
 
 // get the dimensions from the map file 
-FileParser::FileParser(string fileName)
+// int FileParser::FileParser(string fileName)
+void FileParser::findHW(string fileName)
 {
-    string line; 
+    int colInt;
+    int rowInt;
 
-    ifstream filein(fileName);
-    getline(filein, line);
-    int rowInt = fpGetInt(); 
-    getline(filein, line);
-    int colInt = fpGetInt(); 
+    inFile.open(fileName); 
+    while (!inFile.is_open())
+    {
+        cout<<"File cannot be found, name a new file."<<endl; 
+        string newPath; 
+        cin>>newPath; 
+        inFile.open(newPath);
+    }
+    
+    string line; 
+    cout<<"test fp 1"<<endl; // delete later 
+
+    getline(inFile, line);
+    rowInt = fpGetInt(line); 
+    cout<<rowInt<<endl; // delete later 
+
+    getline(inFile, line);
+    colInt = fpGetInt(line); 
+    cout<<colInt<<endl; // delete later 
 }
 
 

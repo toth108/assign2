@@ -8,36 +8,36 @@ using namespace std;
 
 int main (int argc, char** argv)
 {
+    // initialize new class instances 
     UserIO user;
     user.Config();
-
-    FileParser fp(user.filePath);
-
+    cout << "test main 1" << endl; // delete later 
     ClassicMode cm;
-    // initialize new class instances 
-    //UserIO *user = new UserIO(); 
-    //UserIO user;
-    //ClassicMode * cM = new ClassicMode(); 
-    //FileParser * fp = new FileParser(user.filePath);
 
-    cout << "test" << endl;
-    user.Config();
     int boundMode = user.BoundMode();
-cout << "test2" << endl;
-    int height = fp.rowInt; 
-    int width = fp.colInt; 
+    cout << "test main 2" << endl; // delete later 
+    int height = user.h; 
+    cout << "test main 3" << endl; // delete later 
+    int width = user.w; 
+    
+    cout << height << " main height" << endl; // delete later 
+    cout << width << " main width" << endl; // delete later 
 
-    World * w = new World(height, width); 
+    // World * w = new World(height, width); 
+    cout << "test main 4" << endl; // delete later 
     
     // Classic Mode 
     if (boundMode == 1) 
     {
+        cout<<"test main 5"<<endl; // delete later 
+
         // iterate through w.grid for r and c 
         for (int r = 0; r < height; r++)
         {
-            for (int c = 0; c < width; c++)
+            for (int c = 0; c <= width; c++)
             {
-                cm.classicNeighbors(r, c, height, width);
+                cout<<"test main 6" << " r: " << r << " c: " << c <<endl; // delete later 
+                //cm.classicNeighbors(r, c, height, width);
             }
         }
     }

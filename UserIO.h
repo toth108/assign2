@@ -10,9 +10,12 @@ class UserIO
     public: 
     int GetInt(); 
     double GetDouble(); 
-    int Config(); 
+    void Config(); 
     int BoundMode(); 
     string filePath; 
+    int h; 
+    int w; 
+    double startPop;
 };
 
 #endif 
