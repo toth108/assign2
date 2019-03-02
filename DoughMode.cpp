@@ -59,15 +59,15 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c] == true) 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == height][c == width] == true) // bottom right corner 
         {
@@ -96,15 +96,15 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r - 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == height][c == width] == true) // bottom right corner 
         {
@@ -133,15 +133,15 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == 0][c == width]) // top right corner 
         {
@@ -170,35 +170,35 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == height][c - 1] == true) // up left 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == height][c] == true) // up straight
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == height][c + 1] == true) // up left 
         {
-            ++neighbors;
+            neighbors++;
         }
     }
 
@@ -207,35 +207,35 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r - 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r -1][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c == width] == true) // left straight 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c == width] == true) // left up
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c == width] == true) // left down 
         {
-            ++neighbors;
+            neighbors++;
         }
     }
 
@@ -244,35 +244,35 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c + 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == 0][c] == true) // down straight 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == 0][c + 1] == true) // down right
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r == 0][c + 1] == true) // down left 
         {
-            ++neighbors;
+            neighbors++;
         }
     }
 
@@ -281,39 +281,39 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
     {
         if (w.grid[r - 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c - 1] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c] == true)
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r][c == 0] == true) // right straight 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r + 1][c == 0] == true) // right down 
         {
-            ++neighbors;
+            neighbors++;
         }
         else if (w.grid[r - 1][c == 0] == true) // right up 
         {
-            ++neighbors;
+            neighbors++;
         }
     }
 
-    // set up new grid 
+    // add to new grid 
     if (neighbors <= 1)
     {
         w.tempGrid[r][c] = false; 
