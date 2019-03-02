@@ -37,7 +37,7 @@ int main (int argc, char** argv)
             for (int c = 0; c <= width; c++)
             {
                 cout<<"test main 6" << " r: " << r << " c: " << c <<endl; // delete later 
-                //cm.classicNeighbors(r, c, height, width);
+                cm.classicNeighbors(r, c, height, width);
             }
         }
     }

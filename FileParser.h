@@ -11,7 +11,6 @@ class FileParser
     void openFile(string filePath);
     int fpGetInt(string line); 
     FileParser();
-    //int FileParser(string fileName);
     void findHW(string fileName);
     ifstream inFile;
     int maxSize; 

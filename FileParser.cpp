@@ -42,19 +42,9 @@ int FileParser::fpGetInt(string line)
     return lineInt; 
 }
 
-FileParser::FileParser()
-{
-    int f = 0; // it needed something here to run 
-    return; 
-}
-
 // get the dimensions from the map file 
-// int FileParser::FileParser(string fileName)
 void FileParser::findHW(string fileName)
 {
-    int colInt;
-    int rowInt;
-
     inFile.open(fileName); 
     while (!inFile.is_open())
     {
@@ -68,12 +58,18 @@ void FileParser::findHW(string fileName)
     cout<<"test fp 1"<<endl; // delete later 
 
     getline(inFile, line);
-    rowInt = fpGetInt(line); 
-    cout<<rowInt<<endl; // delete later 
+    int rowInt = fpGetInt(line); 
+    cout<<rowInt<<" rowInt fp "<<endl; // delete later 
 
     getline(inFile, line);
-    colInt = fpGetInt(line); 
-    cout<<colInt<<endl; // delete later 
+    int colInt = fpGetInt(line); 
+    cout<<colInt<<" colInt fp "<<endl; // delete later 
+}
+
+FileParser::FileParser()
+{
+    int f = 0; // it needed something here to run 
+    return; 
 }
 
 

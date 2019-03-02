@@ -197,7 +197,7 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
     }
     else if (neighbors = 2)
     {
-        w.tempGrid[r][c]; // needs get function ??
+        w.tempGrid[r][c] = w.grid[r][c]; // needs get function ??
     }
     else if (neighbors = 3)
     {
@@ -208,8 +208,6 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         w.tempGrid[r][c] = false; 
     }
 }
-
-
 
 
 // deconstructor 

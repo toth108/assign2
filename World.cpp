@@ -33,11 +33,85 @@ void World::killLife(int r, int c)
     grid[r][c] = false; 
 }
 
-void World::tempWorld(int r, int c)
+void World::tempWorld(int height, int width)
 {
-    **tempGrid = new bool**[r];
-    for (unsigned int i = 0; i < r; i++)
+    int c; 
+    **tempGrid = new bool**[height];
+    for (unsigned int r = 0; r < width; r++)
     {
-        *tempGrid[i] = new bool*[c]; 
+        *tempGrid[r] = new bool*[c]; 
     }
+}
+
+void World::charWorld(int height, int width)
+{
+    /*int c; 
+    **charGrid = new char**[height];
+    for (unsigned int r = 0; r < width; r++) 
+    {
+        *charGrid[r] = new char*[c]; 
+    }*/
+}
+
+void World::copyWorld(int height, int width)
+{
+    // iterate through w.grid for r and c 
+    for (int r = 0; r < height; r++)
+    {
+        for (int c = 0; c < width; c++)
+        {
+            if (tempGrid[r][c] == true) 
+            {
+                grid[r][c] = true;
+            }
+            else 
+            {
+                grid[r][c] = false;
+            }
+        }
+    }
+
+    // empty tempGrid 
+    for (int r = 0; r < height; r++)
+    {
+        //for (int c = 0; c < width; c++)
+        //{
+            delete[] tempGrid[r];
+        //}
+    }
+}
+
+void World::changeWorld(int height, int width) // transfers from bool to X and -
+{
+    /*// iterate through w.grid for r and c 
+    for (int r = 0; r < height; r++)
+    {
+        for (int c = 0; c < width; c++)
+        {
+            if (tempGrid[r][c] == true) 
+            {
+                charGrid[r][c] = 'X';
+            }
+            else 
+            {
+                charGrid[r][c] = '-';
+            }
+        }
+    }*/ 
+}
+
+void World::coutWorld(int height, int width)
+{
+    /*cout<<height<<endl; 
+    cout<<width<<endl; 
+
+    // iterate through w.grid for r and c 
+        for (int r = 0; r < height; r++)
+        {
+            for (int c = 0; c < width; c++)
+            {
+                cout<<charGrid[r][c]; 
+            }
+            cout<<endl; 
+        }*/
 }

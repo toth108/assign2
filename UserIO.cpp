@@ -64,8 +64,6 @@ void UserIO::Config()
             cout<<"Enter the path of the map file you would like to use: "<<endl; 
             string filePath; 
             cin>>filePath; 
-
-            //FileParser fp(filePath);
             
             FileParser fp;
             fp.findHW(filePath);
