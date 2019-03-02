@@ -114,4 +114,4 @@ void World::coutWorld(int height, int width)
             }
             cout<<endl; 
         }*/
-}c
+}
