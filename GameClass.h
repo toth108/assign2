@@ -6,7 +6,9 @@ using namespace std;
 
 class GameClass
 {
-    GameClass(int r, int c, int height, int width);
+    GameClass();
+    int globalHeight; 
+    int globalWidth; 
 };
 
 #endif 

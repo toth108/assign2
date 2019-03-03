@@ -24,31 +24,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++; 
         }
-        else if (w.grid[r][c + 1] = true)
+        if (w.grid[r][c + 1] = true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] = true)
+        if (w.grid[r + 1][c + 1] = true)
         {
             neighbors++; 
         }
-        else if (w.grid[r == height][c == width] == true) // bottom right corner 
+        if (w.grid[r == height][c == width] == true) // bottom right corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == height][c == 0] == true) // bottom left corner 
+        if (w.grid[r == height][c == 0] == true) // bottom left corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == 0][c == width] == true) // top right corner 
+        if (w.grid[r == 0][c == width] == true) // top right corner 
         {
             neighbors++;   
         }
-        else if (w.grid[r == height][c + 1] == true) // diagonal up right 
+        if (w.grid[r == height][c + 1] == true) // diagonal up right 
         {
             neighbors++;   
         }
-        else if (w.grid[r + 1][c == width] == true) // diagonal down left
+        if (w.grid[r + 1][c == width] == true) // diagonal down left
         {
             neighbors++;   
         }
@@ -61,31 +61,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true) 
+        if (w.grid[r + 1][c] == true) 
         {
             neighbors++;
         }
-        else if (w.grid[r == height][c == width] == true) // bottom right corner 
+        if (w.grid[r == height][c == width] == true) // bottom right corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == height][c == 0] == true) // bottom left corner 
+        if (w.grid[r == height][c == 0] == true) // bottom left corner 
         {
             neighbors++; 
         } 
-        else if (w.grid[r == 0][c == 0] == true) // top left corner
+        if (w.grid[r == 0][c == 0] == true) // top left corner
         {
             neighbors++; 
         }
-        else if (w.grid[r == height][c == (width - 1)] == true) // diagonal up left 
+        if (w.grid[r == height][c == (width - 1)] == true) // diagonal up left 
         {
             neighbors++; 
         }  
-        else if (w.grid[r + 1][c == 0] == true) // diagonal down right 
+        if (w.grid[r + 1][c == 0] == true) // diagonal down right 
         {
             neighbors++; 
         } 
@@ -98,31 +98,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c + 1] == true)
+        if (w.grid[r - 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r == height][c == width] == true) // bottom right corner 
+        if (w.grid[r == height][c == width] == true) // bottom right corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == 0][c == width]) // top right corner 
+        if (w.grid[r == 0][c == width]) // top right corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == 0][c == 0] == true) // top left corner
+        if (w.grid[r == 0][c == 0] == true) // top left corner
         {
             neighbors++; 
         }
-        else if (w.grid[r == 0][c + 1] == true) // diagonal down right 
+        if (w.grid[r == 0][c + 1] == true) // diagonal down right 
         {
             neighbors++; 
         }  
-        else if (w.grid[r == (height - 1)][c == width] == true) // diagonal up left 
+        if (w.grid[r == (height - 1)][c == width] == true) // diagonal up left 
         {
             neighbors++; 
         } 
@@ -135,31 +135,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c] == true)
+        if (w.grid[r - 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r == 0][c == width]) // top right corner 
+        if (w.grid[r == 0][c == width]) // top right corner 
         {
             neighbors++; 
         }
-        else if (w.grid[r == 0][c == 0] == true) // top left corner
+        if (w.grid[r == 0][c == 0] == true) // top left corner
         {
             neighbors++; 
         }
-        else if (w.grid[r == height][c == 0] == true) // bottom left corner 
+        if (w.grid[r == height][c == 0] == true) // bottom left corner 
         {
             neighbors++; 
         } 
-        else if (w.grid[r == (height - 1)][c == 0] == true) // diagonal up right 
+        if (w.grid[r == (height - 1)][c == 0] == true) // diagonal up right 
         {
             neighbors++; 
         } 
-        else if (w.grid[r == 0][c == (width - 1)] == true) // diagonal down left 
+        if (w.grid[r == 0][c == (width - 1)] == true) // diagonal down left 
         {
             neighbors++; 
         } 
@@ -172,31 +172,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] == true)
+        if (w.grid[r + 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r == height][c - 1] == true) // up left 
+        if (w.grid[r == height][c - 1] == true) // up left 
         {
             neighbors++;
         }
-        else if (w.grid[r == height][c] == true) // up straight
+        if (w.grid[r == height][c] == true) // up straight
         {
             neighbors++;
         }
-        else if (w.grid[r == height][c + 1] == true) // up left 
+        if (w.grid[r == height][c + 1] == true) // up left 
         {
             neighbors++;
         }
@@ -209,31 +209,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r -1][c + 1] == true)
+        if (w.grid[r -1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] == true)
+        if (w.grid[r + 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c == width] == true) // left straight 
+        if (w.grid[r][c == width] == true) // left straight 
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c == width] == true) // left up
+        if (w.grid[r - 1][c == width] == true) // left up
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c == width] == true) // left down 
+        if (w.grid[r + 1][c == width] == true) // left down 
         {
             neighbors++;
         }
@@ -246,31 +246,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c] == true)
+        if (w.grid[r - 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c + 1] == true)
+        if (w.grid[r - 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r == 0][c] == true) // down straight 
+        if (w.grid[r == 0][c] == true) // down straight 
         {
             neighbors++;
         }
-        else if (w.grid[r == 0][c + 1] == true) // down right
+        if (w.grid[r == 0][c + 1] == true) // down right
         {
             neighbors++;
         }
-        else if (w.grid[r == 0][c + 1] == true) // down left 
+        if (w.grid[r == 0][c + 1] == true) // down left 
         {
             neighbors++;
         }
@@ -283,31 +283,31 @@ int DoughMode::doughNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c - 1] == true)
+        if (w.grid[r][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c == 0] == true) // right straight 
+        if (w.grid[r][c == 0] == true) // right straight 
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c == 0] == true) // right down 
+        if (w.grid[r + 1][c == 0] == true) // right down 
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c == 0] == true) // right up 
+        if (w.grid[r - 1][c == 0] == true) // right up 
         {
             neighbors++;
         }

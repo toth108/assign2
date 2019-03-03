@@ -29,11 +29,11 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++; 
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] == true)
+        if (w.grid[r + 1][c + 1] == true) 
         {
             neighbors++; 
         }
@@ -46,11 +46,11 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true) 
+        if (w.grid[r + 1][c] == true) 
         {
             neighbors++;
         }
@@ -63,11 +63,11 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c + 1] == true)
+        if (w.grid[r - 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
@@ -80,11 +80,11 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c] == true)
+        if (w.grid[r - 1][c] == true)
         {
             neighbors++;
         }
@@ -97,19 +97,19 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] == true)
+        if (w.grid[r + 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
@@ -122,19 +122,19 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r -1][c + 1] == true)
+        if (w.grid[r -1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c + 1] == true)
+        if (w.grid[r + 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }
@@ -147,19 +147,19 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c] == true)
+        if (w.grid[r - 1][c] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c + 1] == true)
+        if (w.grid[r - 1][c + 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c + 1] == true)
+        if (w.grid[r][c + 1] == true)
         {
             neighbors++;
         }
@@ -172,19 +172,19 @@ int ClassicMode::classicNeighbors(int r, int c, int height, int width)
         {
             neighbors++;
         }
-        else if (w.grid[r - 1][c - 1] == true)
+        if (w.grid[r - 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r][c - 1] == true)
+        if (w.grid[r][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c - 1] == true)
+        if (w.grid[r + 1][c - 1] == true)
         {
             neighbors++;
         }
-        else if (w.grid[r + 1][c] == true)
+        if (w.grid[r + 1][c] == true)
         {
             neighbors++;
         }

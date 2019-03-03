@@ -1,5 +1,6 @@
 #include "UserIO.h" 
 #include "FileParser.h"
+#include "World.h"
 #include <iostream> 
 #include <fstream> 
 #include <string>
@@ -54,6 +55,8 @@ void UserIO::Config()
 {
     while (true) // loops until a viable input is given 
     {
+        World w(height, width); 
+
         cout<<"Would you like to provide a file or use a random configuration?"<<endl; 
         cout<<"Enter '1' to enter a file path or '2' to use random configuration."<<endl; 
         int configChoice = GetInt();
@@ -68,20 +71,23 @@ void UserIO::Config()
             FileParser fp;
             fp.findHW(filePath);
 
-            int h = fp.rowInt; 
-            cout << h << " user IO height "<< endl; // delete later 
-            int w = fp.colInt; 
-            cout << h << " user IO width "<< endl; // delete later 
+            // w.globalHeight
+            // int h = fp.rowInt; 
+            cout << w.globalHeight << " user IO height "<< endl; // delete later 
+            // int w = fp.colInt; 
+            cout << w.globalWidth << " user IO width "<< endl; // delete later 
             break; 
         }
         else if (configChoice == 2) 
         {
             cout<<"What is the height (number of rows) of your world?"<<endl; 
-            int h = GetInt(); 
-            cout << h << endl; 
+            w.globalHeight = GetInt(); 
+            // int h = GetInt(); 
+            cout << w.globalHeight >> " user IO height "<< endl; 
             cout<<"What is the width (number of columns) of your world?"<<endl; 
-            int w = GetInt();
-            cout << w << endl; 
+            w.globalWidth = GetInt(); 
+            // int w = GetInt();
+            cout << w.globalWidth << " user IO width "<< endl; 
             cout<<"Enter a decimal value between 0 and 1 for the initial population density of your world: "<<endl;
             startPop = GetDouble();
             

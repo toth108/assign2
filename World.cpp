@@ -4,6 +4,11 @@
 using namespace std; 
 
 
+// constructor 
+World::World()
+{
+    return; 
+}
 // build empty grid 
 World::World(int height, int width)
 {

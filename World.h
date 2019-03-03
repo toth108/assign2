@@ -10,6 +10,7 @@ class World
     bool** grid; 
     bool** tempGrid;
     char** charGrid; 
+    World();
     World(int r, int c);
     ~World();
     void addLife(int r, int c);
@@ -20,6 +21,8 @@ class World
     void coutWorld(int height, int width);
     void changeWorld(int height, int width);
     void charWorld(int height, int width);
+    int globalHeight; 
+    int globalWidth; 
 };
 
 #endif 

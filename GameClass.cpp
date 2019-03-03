@@ -6,8 +6,14 @@
 using namespace std; 
 
 
-GameClass::GameClass(int r, int c, int height, int width)
+GameClass::GameClass()
+{
+    int globalHeight; 
+    int globalWidth; 
+};
+
+/*GameClass::GameClass(int r, int c, int height, int width)
 {
     World w(r,c); 
-};
+};*/ 
 
