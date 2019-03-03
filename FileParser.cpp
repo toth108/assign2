@@ -1,5 +1,6 @@
 #include "FileParser.h" 
 #include "World.h"
+#include "GameClass.h"
 #include <iostream> 
 #include <fstream> 
 #include <string>
@@ -46,7 +47,7 @@ int FileParser::fpGetInt(string line)
 // get the dimensions from the map file 
 void FileParser::findHW(string fileName)
 {
-    World w(height, width); 
+    GameClass gc; 
 
     inFile.open(fileName); 
     while (!inFile.is_open())
@@ -61,12 +62,12 @@ void FileParser::findHW(string fileName)
     cout<<"test fp 1"<<endl; // delete later 
 
     getline(inFile, line);
-    w.globalHeight = fpGetInt(line); 
+    gc.globalHeight = fpGetInt(line); 
     // int rowInt = fpGetInt(line); 
     cout<<rowInt<<" rowInt fp "<<endl; // delete later 
 
     getline(inFile, line);
-    w.globalWidth = fpGetInt(line);
+    gc.globalWidth = fpGetInt(line);
     // int colInt = fpGetInt(line); 
     cout<<colInt<<" colInt fp "<<endl; // delete later 
 }

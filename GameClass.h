@@ -6,6 +6,7 @@ using namespace std;
 
 class GameClass
 {
+    public: 
     GameClass();
     int globalHeight; 
     int globalWidth; 

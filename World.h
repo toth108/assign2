@@ -21,8 +21,6 @@ class World
     void coutWorld(int height, int width);
     void changeWorld(int height, int width);
     void charWorld(int height, int width);
-    int globalHeight; 
-    int globalWidth; 
 };
 
 #endif 
